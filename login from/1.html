@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Management System</h1>
+
+        <!-- Login Form -->
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Account Information -->
+        <div id="account-info" style="display:none;">
+            <h2>Account Details</h2>
+            <p id="account-balance">Balance: $0.00</p>
+            <button onclick="logout()">Logout</button>
+            
+            <h3>Transactions</h3>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+            <div id="transaction-history"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
